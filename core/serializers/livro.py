@@ -5,7 +5,7 @@ from core.models import Livro
 class LivroListSerializer(ModelSerializer):
     class Meta:
         model = Livro
-        fields = ("id", "titulo", "preco")
+        fields = ("id", "titulo", "preco", "categoria")
 
 class LivroRetrieveSerializer(ModelSerializer):
     class Meta:
